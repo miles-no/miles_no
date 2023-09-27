@@ -2,3 +2,7 @@
 	path = miles_web_components
 	url = https://github.com/miles-no/miles_web_components
 	branch = main
+[submodule "miles-wp-theme"]
+	path = miles-wp-theme
+	url = https://github.com/miles-no/miles-wp-theme
+	branch = main
