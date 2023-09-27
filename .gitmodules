@@ -6,3 +6,7 @@
 	path = miles-wp-theme
 	url = https://github.com/miles-no/miles-wp-theme
 	branch = main
+[submodule "miles-wp-web-components-plugin"]
+	path = miles-wp-web-components-plugin
+	url = https://github.com/miles-no/miles-wp-web-components-plugin
+	branch = main
