@@ -10,7 +10,7 @@ The website has an integration with CV-partner that is used to list all consulta
 
 ## Related repositories
 
-- [miles_web_components](miles_web_components)
+- [miles_web_components](miles_web_components/)
   - The repository containing the web components.
 - [miles-wp-theme](https://github.com/miles-no/miles-wp-theme)
   - Wordpress theme used to create wordpress templates and styling of everything not styled in the web components.
