@@ -10,3 +10,7 @@
 	path = miles-wp-web-components-plugin
 	url = https://github.com/miles-no/miles-wp-web-components-plugin
 	branch = main
+[submodule "miles_limes"]
+	path = miles_limes
+	url = https://github.com/miles-no/miles_limes
+	branch = main
