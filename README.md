@@ -2,6 +2,8 @@
 
 This is the "parent" repo for miles.no and here you will find documentation for how to work with this project as well as the things you need to get a dev environment up and running.
 
+This repo contains all the required repositories as a submodule, so technically it is used as a "monorepo". The deployment to the actual site should be done from GitHub Actions defined in this repository.
+
 ## About the website
 
 The website is based on the previous version of Miles.no built by Ignitas. The website is using Wordpress as the CMS and most of the components on the website are built with Web Components.
@@ -21,8 +23,12 @@ The website has an integration with CV-partner that is used to list all consulta
 
 ## How to deploy changes
 
+To be filled after pipeline has been setup.
+
 ### Miles limes
 
 Changes deployed to Heroku on merge to main.
 
 ## Development environment
+
+Since this repository is using Git Submodules, any changes done in the submodule should be pushed into the repository of that submodule.
