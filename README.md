@@ -31,4 +31,7 @@ Changes deployed to Heroku on merge to main.
 
 ## Development environment
 
+Regular `git clone https://github.com/miles-no/miles_no.git` will just clone the repository but create an empty folder for submodules.
+In order to clone along with the submodules, run with `--recursive` flag, i.e. `git clone --recursive https://github.com/miles-no/miles_no.git`
+
 Since this repository is using Git Submodules, any changes done in the submodule should be pushed into the repository of that submodule.
