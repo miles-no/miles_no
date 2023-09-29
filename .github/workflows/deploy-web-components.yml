@@ -12,9 +12,6 @@ jobs:
       matrix:
         node-version: [18.x]
         # See supported Node.js release schedule at https://nodejs.org/en/about/releases/
-    defaults:
-      run:
-        working-directory: ./miles_web_components
     steps:
       - name: Checkout
         uses: actions/checkout@v4
@@ -25,10 +22,11 @@ jobs:
           cache: "npm"
       - name: Install dependencies and build
         run: |
+          cd miles_web_components
           npm install
           npm run build --if-present
       - name: Upload with SFTP
-        uses: miles-no/miles_no/.github/workflows/upload-sftp.yml@master
+        uses: ./.github/workflows/upload-sftp.yml@master
         with:
-          localPath: ./public
+          localPath: ./miles_web_components/public
           remotePath: ./wp-newsite/wp-content/plugins/miles-wp-web-components-plugin/miles-wc-new # Path to web components folder on WP Hosting
