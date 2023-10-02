@@ -24,8 +24,9 @@ jobs:
       # NOTE: `since_last_remote_commit: true` is implied by default and falls back to the previous local commit.
       - name: Move all changed files to a directory
         run: |
+          cd miles-wp-theme
           mkdir changed-files
-          cp ./miles-wp-themes/${{ steps.changed-files.outputs.all_changed_files }} changed-files --parents
+          cp ${{ steps.changed-files.outputs.all_changed_files }} changed-files --parents
           ls changed-files -R
       # - name: Upload with SFTP
       #   uses: Creepios/sftp-action@v1.0.3
