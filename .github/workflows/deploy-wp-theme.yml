@@ -23,5 +23,5 @@ jobs:
           username: ${{ secrets.SFTP_USERNAME }}
           passphrase: ${{ secrets.SFTP_PASSPHRASE }}
           privateKey: ${{ secrets.SFTP_PRIVATE_KEY }}
-          localPath: ./miles-wp-themes
+          localPath: ./miles-wp-theme
           remotePath: ./wp-newsite/wp-content/themes/miles-wp-theme # Path to theme folder on WP Hosting
