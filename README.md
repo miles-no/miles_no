@@ -23,7 +23,14 @@ The website has an integration with CV-partner that is used to list all consulta
 
 ## How to deploy changes
 
-To be filled after pipeline has been setup.
+We've created GitHub Actions for deploying changes made to the submodules.
+
+To deploy your changes, simply:
+
+1. Navigate to the "Actions"-tab in the repository in GitHub
+2. Select the workflow corresponding to the submodule you want to deploy
+3. Click on "Run workflow"
+<img width="1787" alt="Screenshot 2023-10-02 at 16 07 33" src="https://github.com/miles-no/miles_no/assets/9723394/11d4ad30-ce8f-4ce0-81e1-6bb38f7966cb">
 
 ### Miles limes
 
