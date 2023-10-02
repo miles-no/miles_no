@@ -3,7 +3,6 @@ name: Deploy web components to WP Hosting
 on:
   push:
     branches: ["main"]
-    paths: ["miles_web_components/**"]
 
 jobs:
   build:
@@ -15,6 +14,8 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v4
+        with:
+          submodules: true
       - name: Setup Node.js
         uses: actions/setup-node@v3
         with:
