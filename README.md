@@ -21,9 +21,21 @@ The website has an integration with CV-partner that is used to list all consulta
 - [miles_limes](https://github.com/miles-no/miles_limes)
   - Java integration with CV-partner API.
 
+## Updating submodules
+
+In order to deploy changes you've made to a submodule, you have to update the submodule to point to the latest commit in corresponding repository of the submodule. To update a submodule to point to the latest commit, run the following command:
+
+`git submodule update --remote <submodule>`
+
+This command will pinpoint the module to the latest commit in the underlying repository. Now, commit the update:
+
+`git commit -am "Updated <submodule>`
+
+Afterwards, follow the steps in the next section to deploy the submodule.
+
 ## How to deploy changes
 
-We've created GitHub Actions for deploying changes made to the submodules.
+We're using GitHub Actions to deploy changes made to the submodules. If you have updated one or more submodules, follow these steps to deploy the updated submodules. 
 
 To deploy your changes, simply:
 
