@@ -21,6 +21,13 @@ The website has an integration with CV-partner that is used to list all consulta
 - [miles_limes](https://github.com/miles-no/miles_limes)
   - Java integration with CV-partner API.
 
+## Cloning the repository locally
+
+Regular `git clone https://github.com/miles-no/miles_no.git` will just clone the repository but create an empty folder for submodules.
+In order to clone along with the submodules, run with `--recursive` flag, i.e. `git clone --recursive https://github.com/miles-no/miles_no.git`
+
+Since this repository is using Git Submodules, any changes done in the submodule should be pushed into the repository of that submodule.
+
 ## Updating submodules
 
 In order to deploy changes you've made to a submodule, you have to update the submodule to point to the latest commit in corresponding repository of the submodule. To update a submodule to point to the latest commit, run the following command:
@@ -47,10 +54,3 @@ To deploy your changes, simply:
 ### Miles limes
 
 Changes deployed to Heroku on merge to main.
-
-## Development environment
-
-Regular `git clone https://github.com/miles-no/miles_no.git` will just clone the repository but create an empty folder for submodules.
-In order to clone along with the submodules, run with `--recursive` flag, i.e. `git clone --recursive https://github.com/miles-no/miles_no.git`
-
-Since this repository is using Git Submodules, any changes done in the submodule should be pushed into the repository of that submodule.
