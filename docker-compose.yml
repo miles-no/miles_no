@@ -31,6 +31,7 @@ services:
       - ../miles-wp-theme/:/var/www/html/wp/wp-content/themes/miles-wp-theme
       - ../miles-wp-web-components-plugin/:/var/www/html/wp/wp-content/plugins/miles-wp-web-components-plugin/
       - ./paid-plugins:/var/www/html/paid-plugins
+      - ./auth.json:/var/www/html/auth.json
       - ./composer.json:/var/www/html/composer.json
       - ./wp-config/wp-config.php:/var/www/html/wp-config.php
   nginx:

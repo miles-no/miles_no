@@ -25,7 +25,6 @@
     "wpackagist-plugin/akismet": "~5.1",
     "wpackagist-plugin/limit-login-attempts-reloaded": "~2.25.15",
     "wpackagist-plugin/duracelltomi-google-tag-manager": "~1.16.2",
-    "wpackagist-plugin/hotjar": "~1.0.14",
     "wpackagist-plugin/import-markdown": "~1.09",
     "wpackagist-plugin/contact-form-7": "~5.7.5",
     "wpackagist-plugin/meks-smart-social-widget": "~1.6",
